@@ -1,0 +1,54 @@
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 95vh;
+   text-align: center;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url(../img/header-bg.jpg);
+   background-blend-mode: unset;
+   background-size: cover;
+   background-position: 50% 60%;
+   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+   backface-visibility: hidden;
+
+   &__primary {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      max-width: 50%;
+
+      &--main {
+         display: block;
+         font-size: 5rem;
+         color: #d3d3d3;
+         text-transform: uppercase;
+         font-weight: 400;
+         letter-spacing: 0.3rem;
+
+         animation: moveInLeft 1s ease-in-out;
+      }
+
+      &--sub {
+         display: block;
+         font-size: 2.5rem;
+         color: rgb(255, 67, 67);
+         font-weight: 400;
+         letter-spacing: 0.1rem;
+
+         animation: moveInRight 1s ease-in-out;
+      }
+
+      &--num {
+         display: block;
+         color: #d3d3d3;
+         font-size: 2.3rem;
+         font-weight: 400;
+         letter-spacing: 0.1rem;
+
+         animation: moveInBottom 1s ease-in-out;
+      }
+   }
+}

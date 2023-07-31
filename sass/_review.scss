@@ -1,0 +1,45 @@
+.review {
+   background-image: linear-gradient(to bottom, #dddddd, #666666);
+   //  height: 50rem;
+   margin-top: (-9vh);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   padding: 20rem 4rem;
+   padding-bottom: 17rem;
+   gap: 4rem;
+
+   &__container {
+      display: flex;
+      align-self: center;
+      gap: 2.5rem;
+   }
+
+   &__title {
+      color: #444444;
+   }
+
+   &__content {
+      background-image: linear-gradient(to right bottom, orange, rgb(239, 104, 21)),
+         url(../img/review-card-bg.jpg);
+      // background-color: orange;
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: 50% 25%;
+      border-radius: 3px;
+      // align-self: center;
+      height: 25rem;
+      width: 40rem;
+      background-color: #dddddd;
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      &-text {
+         margin-bottom: 2.5rem;
+      }
+   }
+}

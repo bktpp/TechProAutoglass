@@ -1,0 +1,117 @@
+.nav {
+   padding: 0 5rem;
+   display: flex;
+   // flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20rem;
+   border-bottom: 2px solid #f9f7f6;
+   height: 7.5rem;
+   background-color: #fff;
+   color: #333333;
+   overflow: hidden;
+   position: sticky;
+   top: 0;
+   z-index: 30;
+
+   &__links {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      &-list {
+         align-self: stretch;
+         display: flex;
+         align-items: center;
+         gap: 1.5rem;
+         font-size: 1.5rem;
+         font-weight: 600;
+         list-style: none;
+         letter-spacing: 0.2rem;
+         color: #333333;
+
+         a,
+         a:visited,
+         a:link {
+            text-decoration: none;
+            color: currentColor;
+         }
+
+         &--item {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+               transform: translateY(-2px) scale(1.1);
+            }
+         }
+      }
+   }
+
+   &__location {
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+   }
+
+   &__contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+   }
+
+   &__logo {
+      background-size: cover;
+      display: block;
+      margin-left: -1.5rem;
+      height: 12rem;
+      transform: translateY(1rem);
+      mix-blend-mode: multiply;
+   }
+
+   &__icon {
+      height: 3.5rem;
+      width: 3.5rem;
+      fill: rgb(255, 67, 67);
+
+      &--black {
+         fill: black;
+      }
+
+      &--white {
+         fill: #fff;
+         height: 2.5rem;
+         width: 2.5rem;
+      }
+
+      &--insta {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-image: linear-gradient(
+            to right top,
+            #feda75,
+            #fa7e1e,
+            #d62976,
+            #962fbf,
+            #4f5bd5
+         );
+         // border-radius: ;
+         height: 3.5rem;
+         width: 3.5rem;
+         border-radius: 10px;
+
+         a {
+            height: 2.5rem;
+         }
+      }
+   }
+
+   &__text {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 600;
+   }
+}

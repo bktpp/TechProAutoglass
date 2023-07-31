@@ -1,0 +1,29 @@
+$color-black: rgba(42, 42, 42, 0.77);
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Lato", sans-serif;
+}
+
+.container {
+   margin: 0 1.2rem;
+}
+
+.heading-2 {
+   font-size: 3.5rem;
+   color: #d3d3d3;
+   letter-spacing: 1px;
+}
