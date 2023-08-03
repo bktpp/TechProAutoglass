@@ -9,9 +9,44 @@
          href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       />
       <link rel="stylesheet" href="css/style.css" />
+      <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" />
+      <script defer src="index.js"></script>
    </head>
    <body>
       <div class="container" id="home">
+         <div class="demo"></div>
+         <ul class="slideout">
+            <li class="slideout__item"><a class="slideout__item--link" href="#home">Home</a></li>
+            <li class="slideout__item">
+               <a class="slideout__item--link" href="#services">Services</a>
+            </li>
+            <li class="slideout__item">
+               <a class="slideout__item--link" href="#reviews">Reviews</a>
+            </li>
+            <li class="slideout__item">
+               <a class="slideout__item--link" href="#contact">Contact</a>
+            </li>
+            <li class="slideout__item slideout__item-icon">
+               <a
+                  href="https://instagram.com/techproautoglass?igshid=NTc4MTIwNjQ2YQ=="
+                  target="_blank"
+                  class="slideout__item-icon__insta"
+               >
+                  <svg class="slideout__item-icon__insta">
+                     <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+               </a>
+            </li>
+            <li class="slideout__item slideout__item-icon">
+               <svg class="slideout__item-icon__yelp">
+                  <use xlink:href="img/sprite.svg#icon-yelp"></use>
+               </svg>
+            </li>
+            <li class="slideout__item"></li>
+         </ul>
+         <div class="ham">
+            <label class="ham__icon"><span class="ham__icon ham__icon-btn"></span></label>
+         </div>
          <nav class="nav">
             <div class="nav__links">
                <ul class="nav__links-list">
@@ -52,6 +87,7 @@
                </a>
             </div>
          </nav>
+
          <figure class="nav__location">
             <svg class="nav__icon">
                <use xlink:href="img/sprite.svg#icon-location_pin"></use>
@@ -112,15 +148,52 @@
          <section class="review" id="reviews">
             <h2 class="review__title heading-2">What our customers are saying...</h2>
             <div class="review__container">
-               <div class="review__content">
-                  <h2 class="review__content-text heading-2">"Best I ever had."</h2>
-               </div>
-               <div class="review__content">
-                  <h2 class="review__content-text heading-2">"Best I ever had."</h2>
-               </div>
-               <div class="review__content">
-                  <h2 class="review__content-text heading-2">"Best I ever had."</h2>
-               </div>
+               <figure class="review__content">
+                  <blockquote class="review__content-text">
+                     Tech Pro Autoglass offers top-notch, efficient service for car window repairs.
+                     Their team is professional and their work is highly commendable.
+                  </blockquote>
+                  <figcaption class="review__content-user">
+                     <img
+                        src="img/review-user-1.jpg"
+                        alt="Customer picture"
+                        class="review__content-photo"
+                     />
+                     <div class="review__content-name">Mary Garcia</div>
+                     <div class="review__content-rating">8.9</div>
+                  </figcaption>
+               </figure>
+               <figure class="review__content">
+                  <blockquote class="review__content-text">
+                     The attention to detail and professionalism I experienced at Tech Pro Autoglass
+                     was truly remarkable. The whole process was handled with such efficiency that
+                     it felt effortless!
+                  </blockquote>
+                  <figcaption class="review__content-user">
+                     <img
+                        src="img/review-user-2.jpg"
+                        alt="Customer picture"
+                        class="review__content-photo"
+                     />
+                     <div class="review__content-name">James Smith</div>
+                     <div class="review__content-rating">9.2</div>
+                  </figcaption>
+               </figure>
+               <figure class="review__content">
+                  <blockquote class="review__content-text">
+                     Tech Pro Autoglass delivers quality and efficiency in car window repairs. Their
+                     service is simply outstanding.
+                  </blockquote>
+                  <figcaption class="review__content-user">
+                     <img
+                        src="img/review-user-3.jpg"
+                        alt="Customer picture"
+                        class="review__content-photo"
+                     />
+                     <div class="review__content-name">Linda Thomas</div>
+                     <div class="review__content-rating">9.0</div>
+                  </figcaption>
+               </figure>
             </div>
          </section>
          <section class="contactus" id="contact">

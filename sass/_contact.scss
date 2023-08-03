@@ -7,6 +7,11 @@
    background-color: #333333;
    letter-spacing: 2px;
 
+   @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      gap: 2rem;
+   }
+
    a,
    a:visited,
    a:link {
@@ -16,6 +21,10 @@
    span,
    a {
       font-size: 1.5rem;
+   }
+
+   span:not(:last-child) {
+      margin-bottom: 0.5rem;
    }
 
    .contactus__address {

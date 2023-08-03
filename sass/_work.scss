@@ -10,8 +10,26 @@
    padding-bottom: 15rem;
    transform: skewY(-5deg);
 
+   @media only screen and (max-width: $bp-largest) {
+      justify-content: center;
+   }
+
+   @media only screen and (max-width: $bp-large) {
+      transform: skewY(0);
+      margin-top: 0;
+      padding: 10rem;
+   }
+
+   @media only screen and (max-width: $bp-medium) {
+      padding: 5rem 1rem;
+   }
+
    & > * {
       transform: skewY(5deg);
+
+      @media only screen and (max-width: $bp-large) {
+         transform: skewY(0);
+      }
    }
 
    &__header {
@@ -35,9 +53,18 @@
 
    .services-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
       flex: 1 1 100%;
-      // flex-wrap: wrap;
+
+      @media only screen and (max-width: $bp-largest) {
+         justify-content: center;
+         align-items: center;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+         justify-content: center;
+      }
    }
 
    &__card {
@@ -59,6 +86,12 @@
       overflow: hidden;
       box-shadow: 0 2rem 4rem rgba(#e42024, 0.4);
       transition: all 0.2s ease-in-out;
+
+      @media only screen and (max-width: $bp-largest) {
+         height: 50rem;
+         max-width: 40rem;
+         margin: 2rem;
+      }
 
       &:hover {
          transform: translateY(-1px) scale(1.05);
@@ -142,6 +175,17 @@
       font-size: 3rem;
       display: flex;
       justify-content: center;
+
+      @media only screen and (max-width: $bp-largest) {
+         max-width: 60%;
+         text-align: center;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+         max-width: 100%;
+         text-align: center;
+      }
+
       // grid-column: 1 / -1;
    }
 }

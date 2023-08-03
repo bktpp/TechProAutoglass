@@ -12,6 +12,11 @@
    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
    backface-visibility: hidden;
 
+   @media only screen and (max-width: $bp-large) {
+      clip-path: none;
+      height: 72vh;
+   }
+
    &__primary {
       display: flex;
       flex-direction: column;
@@ -19,6 +24,10 @@
       align-items: center;
       gap: 1rem;
       max-width: 50%;
+
+      @media only screen and (max-width: $bp-large) {
+         max-width: 90%;
+      }
 
       &--main {
          display: block;
@@ -29,6 +38,14 @@
          letter-spacing: 0.3rem;
 
          animation: moveInLeft 1s ease-in-out;
+
+         @media only screen and (max-width: $bp-large) {
+            font-size: 3.5rem;
+         }
+
+         @media only screen and (max-width: $bp-medium) {
+            animation: none;
+         }
       }
 
       &--sub {
@@ -39,6 +56,10 @@
          letter-spacing: 0.1rem;
 
          animation: moveInRight 1s ease-in-out;
+
+         @media only screen and (max-width: $bp-medium) {
+            animation: none;
+         }
       }
 
       &--num {
@@ -49,6 +70,10 @@
          letter-spacing: 0.1rem;
 
          animation: moveInBottom 1s ease-in-out;
+
+         @media only screen and (max-width: $bp-medium) {
+            animation: none;
+         }
       }
    }
 }

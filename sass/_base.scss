@@ -1,5 +1,12 @@
 $color-black: rgba(42, 42, 42, 0.77);
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 76.25em; //1220px
+$bp-large1: 60.06em; // 961px (for navbar)
+$bp-large: 57.5em; //920px
+$bp-medium: 33.63em; //538px
+$bp-small: 21.63em; //346px
+
 *,
 *::before,
 *::after {
@@ -12,6 +19,10 @@ html {
    box-sizing: border-box;
    font-size: 62.5%;
    scroll-behavior: smooth;
+
+   @media only screen and (max-width: $bp-large) {
+      font-size: 50%;
+   }
 }
 
 body {
