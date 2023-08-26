@@ -1,7 +1,7 @@
 .review {
    background-image: linear-gradient(to bottom, #dddddd, #666666);
    //  height: 50rem;
-   margin-top: (-9vh);
+   margin-top: (-20vh);
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -114,5 +114,10 @@
 
    &__title {
       color: #444444;
+      padding: 10rem 0 0;
+
+      @media only screen and (max-width: $bp-large) {
+         padding: 0;
+      }
    }
 }

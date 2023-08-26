@@ -516,7 +516,7 @@ body {
 
 .review {
   background-image: linear-gradient(to bottom, #dddddd, #666666);
-  margin-top: -9vh;
+  margin-top: -20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -606,6 +606,12 @@ body {
 }
 .review__title {
   color: #444444;
+  padding: 10rem 0 0;
+}
+@media only screen and (max-width: 57.5em) {
+  .review__title {
+    padding: 0;
+  }
 }
 
 .footer {
