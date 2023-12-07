@@ -3,6 +3,7 @@
    "version": "1.0.0",
    "description": "window repair service",
    "main": "index.js",
+   "type": "module",
    "scripts": {
       "watch:sass": "sass sass/main.scss css/style.css -w",
       "devserver": "live-server",
